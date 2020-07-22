@@ -3,8 +3,6 @@
             [reagent.core :as r]
             [goog.object :as gobject]))
 
-(println ::hello)
-
 (assert module)
 (assert module/default)
 
