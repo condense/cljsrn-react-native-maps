@@ -20,3 +20,13 @@
   (let [o (gobject/getValueByKeys e "nativeEvent" "coordinate")]
     {:latitude  (gobject/get o "latitude")
      :longitude (gobject/get o "longitude")}))
+
+(comment
+  (defn app []
+    [rn/view {:style {:flex 1}}
+     [react-native-maps/map-view
+      {:style  {:flex 1}
+       :region {:latitude       -42,
+                :longitude      146,
+                :latitudeDelta  6,
+                :longitudeDelta 6}}]]))
